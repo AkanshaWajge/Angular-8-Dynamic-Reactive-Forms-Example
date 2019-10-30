@@ -1,14 +1,14 @@
 # Angular-8-Dynamic-Reactive-Forms-Example
 This is a quick example of how to build a dynamic form with validation in Angular 8 using Reactive Forms. The example is a simple order form for selecting the number of tickets to purchase and entering a name and email address for each ticket. All fields are required and email fields must contain a valid email address.
 
-#Form Validation
+**Form Validation**
 Form to validate on submit instead of on field change, this is implemented with a submitted property in the app component that is set to true when the form is submitted for the first time, and reset to false if the reset or clear button is clicked.
 
 The "Buy Tickets" button displays the form values in an alert popup if the form is valid. The "Reset" button resets the form back to it's initial state including the removal of all ticket name & email fields. The "Clear" button clears the values of ticket name & email fields.
 
 Styling of the example is all done with Bootstrap 4.3 CSS.
 
-#Dynamic Reactive Forms App Component
+**Dynamic Reactive Forms App Component**
 
 The app component defines the form fields and validators for the dynamic form using an Angular FormBuilder to create an instance of a FormGroup that is stored in the dynamicForm property. The dynamicForm is then bound to the form in the app template below using the [formGroup] directive.
 
@@ -26,7 +26,7 @@ The onReset() method resets the submitted property to false to hide validation m
 
 The onClear() method resets the submitted property to false to hide validation messages, and clears the values of ticket name & email fields with this.t.reset().
 
-#Dynamic Reactive Forms App Template
+**Dynamic Reactive Forms App Template**
 
 The form element uses the [formGroup] directive to bind to the dynamicForm FormGroup in the app component above.
 
